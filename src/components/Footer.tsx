@@ -1,4 +1,4 @@
-import { Mail, Linkedin, Github, FileText, ArrowUp } from 'lucide-react';
+import { Mail, Github, FileText, ArrowUp } from 'lucide-react';
 
 export function Footer() {
   const scrollToTop = () => {

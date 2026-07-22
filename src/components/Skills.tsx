@@ -1,4 +1,4 @@
-import { Code2, Database, GitBranch, Cloud, Sparkles, CheckCircle } from 'lucide-react';
+import { Code2, Database, GitBranch, Cloud, Sparkles } from 'lucide-react';
 
 const skillCategories = [
   {

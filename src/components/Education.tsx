@@ -1,4 +1,4 @@
-import { GraduationCap, Award, Calendar, MapPin, BookOpen, CheckCircle2, Sparkles, FileText, ExternalLink } from 'lucide-react';
+import { GraduationCap, Calendar, MapPin, BookOpen, CheckCircle2, Sparkles, FileText, ExternalLink } from 'lucide-react';
 
 export function Education() {
   const coursework = [

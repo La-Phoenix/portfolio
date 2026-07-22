@@ -1,4 +1,4 @@
-import { Mail, Linkedin, Github, FileText, Code2, ShieldCheck, Cpu, Target, UserCheck, Sparkles, ExternalLink } from 'lucide-react';
+import { Github, FileText, Code2, ShieldCheck, Cpu, UserCheck, Sparkles, ExternalLink } from 'lucide-react';
 
 export function About() {
   const corePrinciples = [
