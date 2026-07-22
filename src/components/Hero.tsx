@@ -138,7 +138,7 @@ export function Hero() {
             <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-indigo-500 to-blue-500" />
             <div className="flex items-center justify-between mb-2">
               <h3 className="text-4xl font-black bg-gradient-to-r from-indigo-600 to-blue-600 dark:from-indigo-400 dark:to-blue-400 bg-clip-text text-transparent">
-                15+
+                5+
               </h3>
               <div className="p-2.5 rounded-xl bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-300">
                 <Code2 size={22} />
