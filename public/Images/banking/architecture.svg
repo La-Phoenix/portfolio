@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19"/>
+      <stop offset="50%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#070a13"/>
+    </linearGradient>
+    <linearGradient id="primaryGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#4f46e5"/>
+    </linearGradient>
+    <linearGradient id="cyanGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <linearGradient id="greenGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="675" fill="url(#bgGrad)"/>
+  
+  <!-- Subtle Grid Lines -->
+  <g stroke="#1f2937" stroke-width="1" opacity="0.4">
+    <path d="M0 75 H1200 M0 150 H1200 M0 225 H1200 M0 300 H1200 M0 375 H1200 M0 450 H1200 M0 525 H1200 M0 600 H1200" />
+    <path d="M150 0 V675 M300 0 V675 M450 0 V675 M600 0 V675 M750 0 V675 M900 0 V675 M1050 0 V675" />
+  </g>
+
+  <!-- Header Banner -->
+  <rect x="60" y="40" width="1080" height="65" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+  <text x="90" y="77" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="20" font-weight="800" letter-spacing="1">REGENT MICROFINANCE BANK</text>
+  <text x="90" y="93" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12" font-weight="500">Standalone Core Account Management System &amp; Workflow Architecture</text>
+  
+  <rect x="940" y="55" width="180" height="34" rx="8" fill="url(#primaryGlow)"/>
+  <text x="1030" y="77" fill="#ffffff" font-family="system-ui, sans-serif" font-size="12" font-weight="700" text-anchor="middle">ENTERPRISE ARCH</text>
+
+  <!-- Node 1: Next.js Staff Portal (Top Left) -->
+  <g transform="translate(80, 160)">
+    <rect width="320" height="150" rx="16" fill="#1e293b" stroke="#6366f1" stroke-width="2" filter="url(#glow)"/>
+    <rect width="320" height="40" rx="16" fill="#312e81"/>
+    <text x="20" y="26" fill="#e0e7ff" font-family="system-ui, sans-serif" font-size="14" font-weight="700">NEXT.JS STAFF DASHBOARD</text>
+    <text x="20" y="68" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">• Staff Account Opening UI</text>
+    <text x="20" y="90" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">• KYC Document Uploads</text>
+    <text x="20" y="112" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">• Approval Workflows &amp; Audit Logs</text>
+    <rect x="230" y="112" width="75" height="24" rx="6" fill="#4338ca"/>
+    <text x="267" y="128" fill="#ffffff" font-family="system-ui, sans-serif" font-size="10" font-weight="700" text-anchor="middle">FRONTEND</text>
+  </g>
+
+  <!-- Connection Line 1 -> 2 -->
+  <path d="M400 235 H480" stroke="#818cf8" stroke-width="3" stroke-dasharray="6,4"/>
+  <polygon points="480,230 492,235 480,240" fill="#818cf8"/>
+
+  <!-- Node 2: NestJS API Gateway (Center) -->
+  <g transform="translate(490, 140)">
+    <rect width="340" height="210" rx="16" fill="#0f172a" stroke="#ec4899" stroke-width="2.5" filter="url(#glow)"/>
+    <rect width="340" height="44" rx="16" fill="#831843"/>
+    <text x="20" y="28" fill="#fbcfe8" font-family="system-ui, sans-serif" font-size="15" font-weight="800">NESTJS API SERVICE</text>
+    
+    <text x="20" y="72" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="12" font-weight="600">Core Modules:</text>
+    <text x="30" y="94" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">• Orchestro Auth &amp; PIN Guards</text>
+    <text x="30" y="114" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">• BVN/NIN Verification Controller</text>
+    <text x="30" y="134" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">• Multi-Tier Approval Engine</text>
+    <text x="30" y="154" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">• Staff Snapshot Audit Logger</text>
+
+    <rect x="20" y="170" width="90" height="24" rx="6" fill="#db2777"/>
+    <text x="65" y="186" fill="#ffffff" font-family="system-ui, sans-serif" font-size="10" font-weight="700" text-anchor="middle">REST APIs</text>
+    <rect x="120" y="170" width="100" height="24" rx="6" fill="#be185d"/>
+    <text x="170" y="186" fill="#ffffff" font-family="system-ui, sans-serif" font-size="10" font-weight="700" text-anchor="middle">PRISMA ORM</text>
+  </g>
+
+  <!-- Connection Line 2 -> 3 (Right: External Services) -->
+  <path d="M830 200 H900" stroke="#f472b6" stroke-width="3"/>
+  <polygon points="900,195 912,200 900,205" fill="#f472b6"/>
+
+  <path d="M830 290 H900" stroke="#38bdf8" stroke-width="3"/>
+  <polygon points="900,285 912,290 900,295" fill="#38bdf8"/>
+
+  <!-- Node 3: BVN Verification Provider (Top Right) -->
+  <g transform="translate(910, 160)">
+    <rect width="210" height="85" rx="12" fill="#1e293b" stroke="#f43f5e" stroke-width="1.5"/>
+    <text x="15" y="28" fill="#ffe4e6" font-family="system-ui, sans-serif" font-size="12" font-weight="700">BVN / NIN PROVIDER</text>
+    <text x="15" y="48" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="10">Identity Verification API</text>
+    <text x="15" y="65" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="10">Match Scoring &amp; Overrides</text>
+  </g>
+
+  <!-- Node 4: BankOne Core Banking System (Middle Right) -->
+  <g transform="translate(910, 260)">
+    <rect width="210" height="95" rx="12" fill="#1e293b" stroke="#0ea5e9" stroke-width="1.5"/>
+    <text x="15" y="28" fill="#e0f2fe" font-family="system-ui, sans-serif" font-size="12" font-weight="700">BANKONE CBA</text>
+    <text x="15" y="48" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="10">Core Banking System</text>
+    <text x="15" y="65" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="10">Customer ID Creation</text>
+    <text x="15" y="80" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="10">Account Activation</text>
+  </g>
+
+  <!-- Connection Line Down to Async Layer -->
+  <path d="M660 350 V410" stroke="#34d399" stroke-width="3" stroke-dasharray="6,4"/>
+  <polygon points="655,410 660,422 665,410" fill="#34d399"/>
+
+  <!-- Lower Architecture Section: Database, Queues, Cache -->
+  <!-- Node 5: PostgreSQL Database -->
+  <g transform="translate(80, 430)">
+    <rect width="320" height="180" rx="16" fill="#0f172a" stroke="#10b981" stroke-width="2" filter="url(#glow)"/>
+    <rect width="320" height="38" rx="16" fill="#065f46"/>
+    <text x="20" y="24" fill="#a7f3d0" font-family="system-ui, sans-serif" font-size="14" font-weight="700">POSTGRESQL DATABASE</text>
+    <text x="20" y="65" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">• Prisma Managed Relational Schema</text>
+    <text x="20" y="85" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">• Customer &amp; Account Request Models</text>
+    <text x="20" y="105" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">• Staff Action Snapshots &amp; Audit Logs</text>
+    <text x="20" y="125" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">• Multi-Signatory Rules &amp; KYC Metadata</text>
+    <rect x="20" y="142" width="130" height="24" rx="6" fill="#047857"/>
+    <text x="85" y="158" fill="#ffffff" font-family="system-ui, sans-serif" font-size="10" font-weight="700" text-anchor="middle">ACID COMPLIANT</text>
+  </g>
+
+  <!-- Node 6: BullMQ & Redis Cache (Bottom Center) -->
+  <g transform="translate(440, 430)">
+    <rect width="340" height="180" rx="16" fill="#0f172a" stroke="#ef4444" stroke-width="2" filter="url(#glow)"/>
+    <rect width="340" height="38" rx="16" fill="#991b1b"/>
+    <text x="20" y="24" fill="#fecaca" font-family="system-ui, sans-serif" font-size="14" font-weight="700">REDIS &amp; BULLMQ QUEUES</text>
+    <text x="20" y="65" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">• Async BankOne Retry Workers</text>
+    <text x="20" y="85" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">• Non-blocking Audit Logging Queue</text>
+    <text x="20" y="105" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">• Fast Redis Token &amp; Permission Caching</text>
+    <text x="20" y="125" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">• Document Validation Jobs</text>
+    <rect x="20" y="142" width="120" height="24" rx="6" fill="#dc2626"/>
+    <text x="80" y="158" fill="#ffffff" font-family="system-ui, sans-serif" font-size="10" font-weight="700" text-anchor="middle">ASYNC QUEUES</text>
+  </g>
+
+  <!-- Node 7: Cloud Storage & Cloudflare -->
+  <g transform="translate(820, 430)">
+    <rect width="300" height="180" rx="16" fill="#0f172a" stroke="#f59e0b" stroke-width="2"/>
+    <rect width="300" height="38" rx="16" fill="#92400e"/>
+    <text x="20" y="24" fill="#fef3c7" font-family="system-ui, sans-serif" font-size="14" font-weight="700">SECURE CLOUD STORAGE</text>
+    <text x="20" y="65" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">• AWS S3 / Cloudflare R2 KYC Storage</text>
+    <text x="20" y="85" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">• Signed URLs for Document Security</text>
+    <text x="20" y="105" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">• Centralized Cloudflare Logpush</text>
+    <text x="20" y="125" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">• Encrypted Document Metadata</text>
+    <rect x="20" y="142" width="110" height="24" rx="6" fill="#d97706"/>
+    <text x="75" y="158" fill="#ffffff" font-family="system-ui, sans-serif" font-size="10" font-weight="700" text-anchor="middle">eKYC VAULT</text>
+  </g>
+
+</svg>

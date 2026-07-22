@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Merriweather:wght@400;700;900&display=swap');
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  html {
+    @apply bg-white text-gray-900;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+
+  html.dark {
+    @apply bg-gray-900 text-gray-100;
+  }
+
+  body {
+    @apply bg-transparent text-inherit;
+    overflow-x: hidden;
+  }
+}
+
+/* Enhanced button and text styling */
+@layer components {
+  .btn-primary {
+    @apply px-8 py-4 bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white rounded-xl font-bold text-lg transition-all duration-300 shadow-lg hover:shadow-2xl hover:scale-105 active:scale-95;
+  }
+
+  .btn-secondary {
+    @apply px-8 py-4 bg-gray-200 text-gray-900 border-2 border-gray-300 rounded-xl font-bold text-lg transition-all duration-300 hover:bg-gray-300 hover:shadow-lg hover:scale-105 active:scale-95;
+    @apply dark:bg-gray-700 dark:text-white dark:border-gray-600 dark:hover:bg-gray-600;
+  }
+
+  .section-title {
+    @apply text-4xl md:text-5xl lg:text-6xl font-black text-center mb-6 tracking-tight;
+    background: linear-gradient(135deg, #7c3aed 0%, #4f46e5 50%, #3b82f6 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: -0.02em;
+  }
+}

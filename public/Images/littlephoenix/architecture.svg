@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090514"/>
+      <stop offset="50%" stop-color="#120c24"/>
+      <stop offset="100%" stop-color="#05030a"/>
+    </linearGradient>
+    <linearGradient id="phoenixGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="50%" stop-color="#f43f5e"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#bgGrad)"/>
+  
+  <g stroke="#2e1065" stroke-width="1" opacity="0.3">
+    <path d="M0 75 H1200 M0 150 H1200 M0 225 H1200 M0 300 H1200 M0 375 H1200 M0 450 H1200 M0 525 H1200 M0 600 H1200" />
+    <path d="M150 0 V675 M300 0 V675 M450 0 V675 M600 0 V675 M750 0 V675 M900 0 V675 M1050 0 V675" />
+  </g>
+
+  <!-- Title Banner -->
+  <rect x="60" y="35" width="1080" height="70" rx="14" fill="#1e1b4b" stroke="#4338ca" stroke-width="1.5"/>
+  <text x="90" y="72" fill="#ffffff" font-family="system-ui, sans-serif" font-size="22" font-weight="900" letter-spacing="0.5">LITTLE PHOENIX AI</text>
+  <text x="90" y="90" fill="#a5b4fc" font-family="system-ui, sans-serif" font-size="12" font-weight="600">Multi-Agent RAG Pipeline &amp; SignalR Real-Time Collaboration Platform</text>
+  
+  <rect x="910" y="52" width="210" height="36" rx="8" fill="url(#phoenixGlow)"/>
+  <text x="1015" y="75" fill="#ffffff" font-family="system-ui, sans-serif" font-size="12" font-weight="800" text-anchor="middle">.NET 9.0 + REACT 19</text>
+
+  <!-- Node 1: React 19 Frontend (Top Left) -->
+  <g transform="translate(70, 145)">
+    <rect width="320" height="190" rx="16" fill="#1e1b4b" stroke="#6366f1" stroke-width="2" filter="url(#glow)"/>
+    <rect width="320" height="40" rx="16" fill="#312e81"/>
+    <text x="20" y="26" fill="#e0e7ff" font-family="system-ui, sans-serif" font-size="14" font-weight="700">REACT 19 FRONTEND UI</text>
+    <text x="20" y="68" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="11">• In-Browser PDF/Word Parsing (pdfjs, mammoth)</text>
+    <text x="20" y="88" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="11">• Real-Time SignalR WebSockets Chat</text>
+    <text x="20" y="108" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="11">• Presence &amp; Read Receipt Sync</text>
+    <text x="20" y="128" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="11">• OAuth 2.0 Google Authentication</text>
+    <rect x="20" y="148" width="100" height="24" rx="6" fill="#4f46e5"/>
+    <text x="70" y="164" fill="#ffffff" font-family="system-ui, sans-serif" font-size="10" font-weight="700" text-anchor="middle">TAILWIND V4</text>
+  </g>
+
+  <!-- Arrow 1 -> 2 -->
+  <path d="M390 240 H470" stroke="#818cf8" stroke-width="3" stroke-dasharray="6,4"/>
+  <polygon points="470,235 482,240 470,245" fill="#818cf8"/>
+
+  <!-- Node 2: .NET 9 Web API & SignalR Backend (Center) -->
+  <g transform="translate(480, 130)">
+    <rect width="360" height="225" rx="16" fill="#090514" stroke="#a855f7" stroke-width="2.5" filter="url(#glow)"/>
+    <rect width="360" height="44" rx="16" fill="#581c87"/>
+    <text x="20" y="28" fill="#f3e8ff" font-family="system-ui, sans-serif" font-size="15" font-weight="800">.NET 9 WEB API &amp; SIGNALR</text>
+    
+    <text x="20" y="70" fill="#e9d5ff" font-family="system-ui, sans-serif" font-size="12" font-weight="700">Multi-Agent Orchestration &amp; RAG:</text>
+    <text x="30" y="90" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="11">• AgentCoordinator &amp; Semantic Kernel</text>
+    <text x="30" y="110" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="11">• RetrieverAgent (Hybrid Search Engine)</text>
+    <text x="30" y="130" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="11">• SummarizeAgent (Groq Llama-3.3-70b)</text>
+    <text x="30" y="150" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="11">• Hybrid Scoring: 0.7*Vector + 0.3*Keyword</text>
+    <text x="30" y="170" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="11">• DataProtection Encryption &amp; Security</text>
+
+    <rect x="20" y="185" width="105" height="24" rx="6" fill="#9333ea"/>
+    <text x="72" y="201" fill="#ffffff" font-family="system-ui, sans-serif" font-size="10" font-weight="700" text-anchor="middle">SIGNALR HUB</text>
+    <rect x="135" y="185" width="115" height="24" rx="6" fill="#7e22ce"/>
+    <text x="192" y="201" fill="#ffffff" font-family="system-ui, sans-serif" font-size="10" font-weight="700" text-anchor="middle">EF CORE 9</text>
+  </g>
+
+  <!-- Arrow 2 -> AI/Vector Cloud (Right) -->
+  <path d="M840 190 H910" stroke="#ec4899" stroke-width="3"/>
+  <polygon points="910,185 922,190 910,195" fill="#ec4899"/>
+
+  <path d="M840 280 H910" stroke="#f59e0b" stroke-width="3"/>
+  <polygon points="910,275 922,280 910,285" fill="#f59e0b"/>
+
+  <!-- Node 3: AI Inference & Embeddings (Top Right) -->
+  <g transform="translate(920, 145)">
+    <rect width="210" height="95" rx="14" fill="#1e1b4b" stroke="#ec4899" stroke-width="1.5"/>
+    <text x="15" y="28" fill="#fbcfe8" font-family="system-ui, sans-serif" font-size="12" font-weight="700">GROQ &amp; GEMINI API</text>
+    <text x="15" y="48" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="10">• Groq Llama-3.3-70b LLM</text>
+    <text x="15" y="65" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="10">• Gemini-Embedding-001</text>
+    <text x="15" y="80" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="10">• 3072d Dense Vector Gen</text>
+  </g>
+
+  <!-- Node 4: Qdrant Vector Cloud (Middle Right) -->
+  <g transform="translate(920, 255)">
+    <rect width="210" height="95" rx="14" fill="#1e1b4b" stroke="#f59e0b" stroke-width="1.5"/>
+    <text x="15" y="28" fill="#fef3c7" font-family="system-ui, sans-serif" font-size="12" font-weight="700">QDRANT VECTOR DB</text>
+    <text x="15" y="48" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="10">• Qdrant Cloud Cluster</text>
+    <text x="15" y="65" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="10">• userId Filter Payload Isolation</text>
+    <text x="15" y="80" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="10">• Cosine Distance Metric</text>
+  </g>
+
+  <!-- Node 5: PostgreSQL Supabase (Bottom Center) -->
+  <g transform="translate(380, 420)">
+    <rect width="440" height="190" rx="16" fill="#090514" stroke="#10b981" stroke-width="2" filter="url(#glow)"/>
+    <rect width="440" height="38" rx="16" fill="#065f46"/>
+    <text x="20" y="24" fill="#a7f3d0" font-family="system-ui, sans-serif" font-size="14" font-weight="700">POSTGRESQL (SUPABASE) &amp; PERSISTENCE LAYER</text>
+    <text x="20" y="65" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="11">• User Profiles, OAuth Session Accounts &amp; DataProtection Keys</text>
+    <text x="20" y="85" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="11">• Real-Time Chat Channels, Group Rooms &amp; RagAssistant Groups</text>
+    <text x="20" y="105" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="11">• Message Logs, Read Order Synchronization &amp; Presence Records</text>
+    <text x="20" y="125" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="11">• Document Metadata, Chunks Reference &amp; Storage Mapping</text>
+    <rect x="20" y="145" width="140" height="24" rx="6" fill="#047857"/>
+    <text x="90" y="161" fill="#ffffff" font-family="system-ui, sans-serif" font-size="10" font-weight="700" text-anchor="middle">PRIMARY DATABASE</text>
+  </g>
+
+</svg>
