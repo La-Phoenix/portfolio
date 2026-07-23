@@ -114,7 +114,7 @@ export function Hero() {
               <div className="text-xs text-slate-500 dark:text-slate-400 font-medium">Production Development</div>
             </div>
             <div>
-              <div className="font-mono text-2xl font-bold text-slate-900 dark:text-slate-100">15+</div>
+              <div className="font-mono text-2xl font-bold text-slate-900 dark:text-slate-100">5+</div>
               <div className="text-xs text-slate-500 dark:text-slate-400 font-medium">Projects Delivered</div>
             </div>
             <div>
