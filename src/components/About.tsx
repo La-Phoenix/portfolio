@@ -87,7 +87,7 @@ export function About() {
               <div className="space-y-3">
                 {/* GitHub */}
                 <a
-                  href="https://github.com/samuelokundalaiye"
+                  href="https://github.com/la-phoenix"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-between p-3.5 rounded-xl bg-slate-50 dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-900 dark:text-slate-100 border border-slate-200/80 dark:border-slate-800 transition-colors group"
@@ -96,7 +96,7 @@ export function About() {
                     <Github size={18} className="text-slate-700 dark:text-slate-300 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors" />
                     <div>
                       <p className="font-mono text-xs font-bold">GitHub Profile</p>
-                      <p className="font-mono text-[11px] text-slate-500">github.com/samuelokundalaiye</p>
+                      <p className="font-mono text-[11px] text-slate-500">github.com/la-phoenix</p>
                     </div>
                   </div>
                   <ExternalLink size={14} className="text-slate-400 group-hover:text-slate-600 dark:group-hover:text-slate-200" />
