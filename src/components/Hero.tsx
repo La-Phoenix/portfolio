@@ -138,7 +138,7 @@ export function Hero() {
               </div>
               <div className="font-mono text-xs text-slate-500 dark:text-slate-400 flex items-center gap-1.5">
                 <Terminal size={12} className="text-indigo-500" />
-                <span>engineer.config.ts</span>
+                <span>SeniorEngineer.cs</span>
               </div>
               <a
                 href="https://github.com/samuelokundalaiye"
@@ -151,51 +151,53 @@ export function Hero() {
               </a>
             </div>
 
-            {/* Code Content */}
+            {/* Code Content (C#) */}
             <div className="p-5 font-mono text-xs sm:text-sm leading-relaxed overflow-x-auto bg-slate-900 text-slate-100 dark:bg-[#0d1117]">
               <div>
-                <span className="text-purple-400">export const</span> <span className="text-blue-400">engineer</span> = &#123;
+                <span className="text-blue-400">namespace</span> <span className="text-emerald-400">LaPhoenix.Portfolio</span>;
+              </div>
+              <div className="mt-2">
+                <span className="text-blue-400">public class</span> <span className="text-yellow-300">SeniorEngineer</span>
+              </div>
+              <div>&#123;</div>
+              <div className="pl-4">
+                <span className="text-blue-400">public string</span> <span className="text-slate-200">Name</span> &#123; <span className="text-blue-400">get</span>; &#125; = <span className="text-emerald-300">&quot;Samuel Okundalaiye&quot;</span>;
               </div>
               <div className="pl-4">
-                <span className="text-slate-400">name:</span> <span className="text-emerald-300">&quot;Samuel Okundalaiye&quot;</span>,
+                <span className="text-blue-400">public string</span> <span className="text-slate-200">Handle</span> &#123; <span className="text-blue-400">get</span>; &#125; = <span className="text-emerald-300">&quot;La-Phoenix&quot;</span>;
               </div>
               <div className="pl-4">
-                <span className="text-slate-400">handle:</span> <span className="text-emerald-300">&quot;La-Phoenix&quot;</span>,
+                <span className="text-blue-400">public string</span> <span className="text-slate-200">Role</span> &#123; <span className="text-blue-400">get</span>; &#125; = <span className="text-emerald-300">&quot;Backend &amp; Full-Stack Engineer&quot;</span>;
               </div>
               <div className="pl-4">
-                <span className="text-slate-400">role:</span> <span className="text-emerald-300">&quot;Backend &amp; Full-Stack Engineer&quot;</span>,
+                <span className="text-blue-400">public string</span> <span className="text-slate-200">Education</span> &#123; <span className="text-blue-400">get</span>; &#125; = <span className="text-emerald-300">&quot;B.Sc. CS (First Class)&quot;</span>;
               </div>
-              <div className="pl-4">
-                <span className="text-slate-400">education:</span> <span className="text-emerald-300">&quot;B.Sc. CS (First Class) — Univ. of Ibadan&quot;</span>,
+              <div className="pl-4 mt-1">
+                <span className="text-blue-400">public string</span>[] <span className="text-slate-200">CoreStack</span> =&gt; <span className="text-blue-400">new</span>[]
               </div>
-              <div className="pl-4">
-                <span className="text-slate-400">primaryStack:</span> [
-              </div>
+              <div className="pl-4">&#123;</div>
               <div className="pl-8 text-amber-300">
-                &quot;ASP.NET Core&quot;, &quot;TypeScript&quot;, &quot;React&quot;, &quot;PostgreSQL&quot;, &quot;Docker&quot;
+                &quot;ASP.NET Core&quot;, &quot;C#&quot;, &quot;PostgreSQL&quot;, &quot;React&quot;, &quot;Docker&quot;
               </div>
-              <div className="pl-4">
-                ],
+              <div className="pl-4">&#125;;</div>
+              <div className="pl-4 mt-1">
+                <span className="text-blue-400">public string</span>[] <span className="text-slate-200">ArchitectureFocus</span> =&gt; <span className="text-blue-400">new</span>[]
               </div>
-              <div className="pl-4">
-                <span className="text-slate-400">architectureFocus:</span> [
-              </div>
+              <div className="pl-4">&#123;</div>
               <div className="pl-8 text-amber-300">
-                &quot;REST APIs&quot;, &quot;Multi-Tenancy&quot;, &quot;RAG Pipelines&quot;, &quot;SignalR WebSockets&quot;
+                &quot;REST APIs&quot;, &quot;Multi-Tenancy&quot;, &quot;RAG Pipelines&quot;, &quot;SignalR&quot;
               </div>
-              <div className="pl-4">
-                ],
+              <div className="pl-4">&#125;;</div>
+              <div className="pl-4 mt-1">
+                <span className="text-blue-400">public string</span> <span className="text-slate-200">Status</span> &#123; <span className="text-blue-400">get</span>; &#125; = <span className="text-emerald-400">&quot;Ready for production&quot;</span>;
               </div>
-              <div className="pl-4">
-                <span className="text-slate-400">status:</span> <span className="text-emerald-400">&quot;Ready for production deployment&quot;</span>
-              </div>
-              <div>&#125;;</div>
+              <div>&#125;</div>
 
               <div className="mt-4 pt-3 border-t border-slate-800 text-slate-500 text-[11px] flex items-center justify-between">
-                <span>// UTF-8 | TypeScript 5.9</span>
+                <span>// UTF-8 | .NET 9.0 (C# 13)</span>
                 <span className="text-emerald-400 flex items-center gap-1">
                   <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping" />
-                  0 errors, 0 warnings
+                  Build Succeeded
                 </span>
               </div>
             </div>
