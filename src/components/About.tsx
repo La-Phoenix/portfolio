@@ -1,132 +1,105 @@
-import { Github, FileText, Code2, ShieldCheck, Cpu, UserCheck, Sparkles, ExternalLink } from 'lucide-react';
+import { Github, FileText, Code2, ShieldCheck, Cpu, ExternalLink, Mail, Layers } from 'lucide-react';
 
 export function About() {
   const corePrinciples = [
     {
       icon: Cpu,
-      title: 'Scalable Architecture',
-      description: 'Designing clean, maintainable microservices, REST APIs, and multi-tenant SaaS platforms.',
-      color: 'text-purple-600 dark:text-purple-400 bg-purple-100 dark:bg-purple-950/60 border-purple-200 dark:border-purple-800/40',
+      title: 'Scalable Microservices & Architecture',
+      description: 'Designing clean, maintainable microservices, RESTful APIs, multi-tenant SaaS backends, and background queue workers.',
     },
     {
       icon: ShieldCheck,
-      title: 'Enterprise Security',
-      description: 'Enforcing RBAC guards, PIN verification, token authorization, and automated compliance logging.',
-      color: 'text-indigo-600 dark:text-indigo-400 bg-indigo-100 dark:bg-indigo-950/60 border-indigo-200 dark:border-indigo-800/40',
+      title: 'Enterprise Security & Authentication',
+      description: 'Enforcing RBAC guards, PIN verification, JWT token authorization, Google OAuth 2.0, and DataProtection key encryption.',
     },
     {
-      icon: Code2,
-      title: 'Performance & Optimization',
-      description: 'Optimizing $O(N)$ runtime bounds, Redis session caching, and async BullMQ queue workers.',
-      color: 'text-emerald-600 dark:text-emerald-400 bg-emerald-100 dark:bg-emerald-950/60 border-emerald-200 dark:border-emerald-800/40',
+      icon: Layers,
+      title: 'API Performance & Data Engineering',
+      description: 'Optimizing $O(N)$ runtime bounds, Redis session caching, Prisma / EF Core 9 query execution, and vector search indexing.',
     },
   ];
 
   return (
     <section
       id="about"
-      className="py-24 px-4 bg-white dark:bg-gray-900 transition-colors relative overflow-hidden"
+      className="py-24 px-4 bg-slate-50/50 dark:bg-[#090d14] border-y border-slate-200/60 dark:border-slate-800/60 transition-colors"
     >
-      {/* Ambient background glow */}
-      <div className="absolute top-1/2 left-0 w-96 h-96 bg-purple-500/10 rounded-full blur-[100px] pointer-events-none" />
-      <div className="absolute bottom-10 right-0 w-96 h-96 bg-indigo-500/10 rounded-full blur-[100px] pointer-events-none" />
-
-      <div className="max-w-6xl mx-auto relative z-10">
-        <h2 className="section-title mb-4">About Me</h2>
-        <p className="text-center text-gray-600 dark:text-gray-300 max-w-2xl mx-auto mb-16 text-base md:text-lg">
-          Dedicated Full-Stack &amp; Backend Engineer passionate about turning complex business requirements into seamless, high-performance software.
-        </p>
+      <div className="max-w-6xl mx-auto">
+        
+        {/* Section Header */}
+        <div className="text-center mb-16">
+          <span className="section-tag">// 01. ABOUT ME</span>
+          <h2 className="section-title">Engineering Background &amp; Approach</h2>
+          <p className="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto text-base sm:text-lg">
+            Software engineer focused on constructing reliable software systems, clean API contracts, and high-performance web solutions.
+          </p>
+        </div>
 
         {/* Main 2-Column Grid */}
         <div className="grid lg:grid-cols-12 gap-8 mb-12">
           
-          {/* Bio Column (7 cols) */}
-          <div className="lg:col-span-7 card p-8 md:p-10 rounded-3xl border border-gray-100 dark:border-gray-800 bg-white/80 dark:bg-gray-900/80 backdrop-blur-xl shadow-xl flex flex-col justify-between">
+          {/* Bio Column */}
+          <div className="lg:col-span-7 dev-card p-8 sm:p-10 flex flex-col justify-between">
             <div>
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-100 dark:bg-purple-950/60 text-purple-700 dark:text-purple-300 text-xs font-bold mb-6 border border-purple-200 dark:border-purple-800/40">
-                <Sparkles size={14} />
-                <span>Full-Stack &amp; Backend Specialist</span>
+              <div className="font-mono text-xs font-semibold text-indigo-600 dark:text-indigo-400 mb-4 flex items-center gap-2">
+                <Code2 size={16} />
+                <span>TECHNICAL_SUMMARY</span>
               </div>
 
-              <h3 className="text-3xl font-black text-gray-900 dark:text-white mb-6">
+              <h3 className="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-4">
                 Samuel Okundalaiye
               </h3>
 
-              <p className="text-gray-700 dark:text-gray-200 mb-5 leading-relaxed font-medium text-base">
-                Passionate Full-Stack Web Developer with <strong className="text-purple-600 dark:text-purple-400">3+ years of experience</strong> engineering web applications across e-commerce SaaS, FinTech banking services, and multiplayer platforms.
+              <p className="text-slate-600 dark:text-slate-300 mb-4 leading-relaxed text-sm sm:text-base font-normal">
+                Full-Stack &amp; Backend Software Engineer with <strong className="text-slate-900 dark:text-slate-100 font-semibold">3+ years of experience</strong> architecting web applications across e-commerce SaaS platforms, FinTech banking backends, and multi-agent AI platforms.
               </p>
 
-              <p className="text-gray-700 dark:text-gray-200 mb-5 leading-relaxed font-medium text-base">
-                Proficient in modern full-stack languages including <strong className="text-indigo-600 dark:text-indigo-400">TypeScript, JavaScript, C# (.NET Core), and Node.js</strong>. Experienced with relational and NoSQL databases such as <strong className="text-blue-600 dark:text-blue-400">PostgreSQL, MongoDB, and MySQL</strong>, utilizing Prisma ORM and EF Core.
+              <p className="text-slate-600 dark:text-slate-300 mb-4 leading-relaxed text-sm sm:text-base font-normal">
+                Proficient across modern software stacks including <span className="font-mono text-xs font-semibold text-indigo-600 dark:text-indigo-400">ASP.NET Core (C#)</span>, <span className="font-mono text-xs font-semibold text-indigo-600 dark:text-indigo-400">TypeScript / JavaScript</span>, <span className="font-mono text-xs font-semibold text-indigo-600 dark:text-indigo-400">Node.js (NestJS / Express)</span>, <span className="font-mono text-xs font-semibold text-indigo-600 dark:text-indigo-400">React &amp; Next.js</span>, and relational/NoSQL databases (<span className="font-mono text-xs font-semibold text-slate-700 dark:text-slate-300">PostgreSQL, MongoDB, MySQL</span>).
               </p>
 
-              <p className="text-gray-700 dark:text-gray-200 leading-relaxed font-medium text-base">
-                Extensive hands-on background with <strong className="text-emerald-600 dark:text-emerald-400">Docker, CI/CD pipelines, BullMQ job queues, Redis caching, and Swagger API documentation</strong>. Dedicated to continuous algorithmic problem solving and writing clean, auditable code.
+              <p className="text-slate-600 dark:text-slate-300 leading-relaxed text-sm sm:text-base font-normal">
+                Active problem solver dedicated to continuous Data Structures &amp; Algorithms practice, API security compliance, containerized deployment via <span className="font-mono text-xs font-semibold text-slate-700 dark:text-slate-300">Docker</span>, and clean software architecture.
               </p>
             </div>
 
-            <div className="mt-8 pt-6 border-t border-gray-100 dark:border-gray-800 flex flex-wrap gap-2">
-              {['TypeScript', 'ASP.NET Core', 'NestJS', 'React', 'Next.js', 'PostgreSQL', 'Docker', 'Redis', 'BullMQ'].map((tag, idx) => (
-                <span
-                  key={idx}
-                  className="px-3 py-1 text-xs font-semibold rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300"
-                >
+            <div className="mt-8 pt-6 border-t border-slate-200/80 dark:border-slate-800 flex flex-wrap gap-2">
+              {['ASP.NET Core', 'TypeScript', 'Node.js', 'NestJS', 'React', 'Next.js', 'PostgreSQL', 'Docker', 'Redis', 'SignalR'].map((tag, idx) => (
+                <span key={idx} className="tech-badge">
                   {tag}
                 </span>
               ))}
             </div>
           </div>
 
-          {/* Quick Connect & Links Column (5 cols) */}
-          <div className="lg:col-span-5 card p-8 md:p-10 rounded-3xl border border-gray-100 dark:border-gray-800 bg-white/80 dark:bg-gray-900/80 backdrop-blur-xl shadow-xl flex flex-col justify-between">
+          {/* Quick Links Column */}
+          <div className="lg:col-span-5 dev-card p-8 sm:p-10 flex flex-col justify-between">
             <div>
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-100 dark:bg-indigo-950/60 text-indigo-700 dark:text-indigo-300 text-xs font-bold mb-6 border border-indigo-200 dark:border-indigo-800/40">
-                <UserCheck size={14} />
-                <span>Connect &amp; Resources</span>
+              <div className="font-mono text-xs font-semibold text-indigo-600 dark:text-indigo-400 mb-4 flex items-center gap-2">
+                <FileText size={16} />
+                <span>QUICK_RESOURCES</span>
               </div>
 
-              <h3 className="text-2xl font-bold mb-6 text-gray-900 dark:text-white">
-                Quick Links
+              <h3 className="text-xl font-bold text-slate-900 dark:text-slate-100 mb-6">
+                Developer Links &amp; Profiles
               </h3>
 
-              <div className="space-y-3.5">
-                {/* LinkedIn - Commented out for now
-                <a
-                  href="https://linkedin.com/in/samuel-okundalaiye"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center justify-between p-4 rounded-2xl bg-gray-50 hover:bg-blue-50/80 dark:bg-gray-800/60 dark:hover:bg-blue-950/40 text-gray-900 dark:text-gray-100 border border-gray-100 dark:border-gray-700/60 transition-all duration-200 group"
-                >
-                  <div className="flex items-center gap-3.5">
-                    <div className="p-2.5 rounded-xl bg-blue-100 dark:bg-blue-900/60 text-blue-600 dark:text-blue-400 group-hover:scale-110 transition-transform">
-                      <Linkedin size={20} />
-                    </div>
-                    <div>
-                      <p className="font-bold text-sm">LinkedIn</p>
-                      <p className="text-xs text-gray-500 dark:text-gray-400">linkedin.com/in/samuel-okundalaiye</p>
-                    </div>
-                  </div>
-                  <ExternalLink size={16} className="text-gray-400 group-hover:text-blue-500 transition-colors" />
-                </a>
-                */}
-
+              <div className="space-y-3">
                 {/* GitHub */}
                 <a
                   href="https://github.com/samuelokundalaiye"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-between p-4 rounded-2xl bg-gray-50 hover:bg-purple-50/80 dark:bg-gray-800/60 dark:hover:bg-purple-950/40 text-gray-900 dark:text-gray-100 border border-gray-100 dark:border-gray-700/60 transition-all duration-200 group"
+                  className="flex items-center justify-between p-3.5 rounded-xl bg-slate-50 dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-900 dark:text-slate-100 border border-slate-200/80 dark:border-slate-800 transition-colors group"
                 >
-                  <div className="flex items-center gap-3.5">
-                    <div className="p-2.5 rounded-xl bg-purple-100 dark:bg-purple-900/60 text-purple-600 dark:text-purple-400 group-hover:scale-110 transition-transform">
-                      <Github size={20} />
-                    </div>
+                  <div className="flex items-center gap-3">
+                    <Github size={18} className="text-slate-700 dark:text-slate-300 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors" />
                     <div>
-                      <p className="font-bold text-sm">GitHub Profile</p>
-                      <p className="text-xs text-gray-500 dark:text-gray-400">github.com/samuelokundalaiye</p>
+                      <p className="font-mono text-xs font-bold">GitHub Profile</p>
+                      <p className="font-mono text-[11px] text-slate-500">github.com/samuelokundalaiye</p>
                     </div>
                   </div>
-                  <ExternalLink size={16} className="text-gray-400 group-hover:text-purple-500 transition-colors" />
+                  <ExternalLink size={14} className="text-slate-400 group-hover:text-slate-600 dark:group-hover:text-slate-200" />
                 </a>
 
                 {/* NeetCode Submissions */}
@@ -134,18 +107,31 @@ export function About() {
                   href="https://github.com/La-Phoenix/neetcode-submissions"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-between p-4 rounded-2xl bg-gray-50 hover:bg-amber-50/80 dark:bg-gray-800/60 dark:hover:bg-amber-950/40 text-gray-900 dark:text-gray-100 border border-gray-100 dark:border-gray-700/60 transition-all duration-200 group"
+                  className="flex items-center justify-between p-3.5 rounded-xl bg-slate-50 dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-900 dark:text-slate-100 border border-slate-200/80 dark:border-slate-800 transition-colors group"
                 >
-                  <div className="flex items-center gap-3.5">
-                    <div className="p-2.5 rounded-xl bg-amber-100 dark:bg-amber-900/60 text-amber-600 dark:text-amber-400 group-hover:scale-110 transition-transform">
-                      <Code2 size={20} />
-                    </div>
+                  <div className="flex items-center gap-3">
+                    <Code2 size={18} className="text-indigo-600 dark:text-indigo-400 group-hover:scale-110 transition-transform" />
                     <div>
-                      <p className="font-bold text-sm">DSA Submissions</p>
-                      <p className="text-xs text-gray-500 dark:text-gray-400">github.com/La-Phoenix/neetcode</p>
+                      <p className="font-mono text-xs font-bold">DSA Submissions Repo</p>
+                      <p className="font-mono text-[11px] text-slate-500">github.com/La-Phoenix/neetcode</p>
                     </div>
                   </div>
-                  <ExternalLink size={16} className="text-gray-400 group-hover:text-amber-500 transition-colors" />
+                  <ExternalLink size={14} className="text-slate-400 group-hover:text-slate-600 dark:group-hover:text-slate-200" />
+                </a>
+
+                {/* Email */}
+                <a
+                  href="mailto:samuelokundalaiye@gmail.com"
+                  className="flex items-center justify-between p-3.5 rounded-xl bg-slate-50 dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-900 dark:text-slate-100 border border-slate-200/80 dark:border-slate-800 transition-colors group"
+                >
+                  <div className="flex items-center gap-3">
+                    <Mail size={18} className="text-emerald-600 dark:text-emerald-400 group-hover:scale-110 transition-transform" />
+                    <div>
+                      <p className="font-mono text-xs font-bold">Direct Email</p>
+                      <p className="font-mono text-[11px] text-slate-500">samuelokundalaiye@gmail.com</p>
+                    </div>
+                  </div>
+                  <ExternalLink size={14} className="text-slate-400 group-hover:text-slate-600 dark:group-hover:text-slate-200" />
                 </a>
 
                 {/* Resume Download */}
@@ -154,40 +140,35 @@ export function About() {
                   target="_blank"
                   rel="noopener noreferrer"
                   download="Samuel_Okundalaiye_Resume.pdf"
-                  className="flex items-center justify-between p-4 rounded-2xl bg-gradient-to-r from-emerald-500/10 to-teal-500/10 hover:from-emerald-500/20 hover:to-teal-500/20 text-gray-900 dark:text-gray-100 border border-emerald-500/30 transition-all duration-200 group"
+                  className="flex items-center justify-between p-3.5 rounded-xl bg-indigo-50 dark:bg-indigo-950/40 hover:bg-indigo-100 dark:hover:bg-indigo-900/50 text-indigo-950 dark:text-indigo-100 border border-indigo-200 dark:border-indigo-800/60 transition-colors group"
                 >
-                  <div className="flex items-center gap-3.5">
-                    <div className="p-2.5 rounded-xl bg-emerald-500 text-white group-hover:scale-110 transition-transform shadow-md">
-                      <FileText size={20} />
-                    </div>
+                  <div className="flex items-center gap-3">
+                    <FileText size={18} className="text-indigo-600 dark:text-indigo-400" />
                     <div>
-                      <p className="font-bold text-sm text-emerald-700 dark:text-emerald-300">Official Resume</p>
-                      <p className="text-xs text-emerald-600/80 dark:text-emerald-400/80">Download CV (PDF)</p>
+                      <p className="font-mono text-xs font-bold text-indigo-900 dark:text-indigo-200">Official Resume PDF</p>
+                      <p className="font-mono text-[11px] text-indigo-600 dark:text-indigo-400">Download CV Document</p>
                     </div>
                   </div>
-                  <ExternalLink size={16} className="text-emerald-500 group-hover:translate-x-0.5 transition-transform" />
+                  <ExternalLink size={14} className="text-indigo-500 group-hover:translate-x-0.5 transition-transform" />
                 </a>
               </div>
             </div>
           </div>
         </div>
 
-        {/* 3 Core Principles Highlight Cards */}
+        {/* 3 Core Architecture Focus Cards */}
         <div className="grid md:grid-cols-3 gap-6">
           {corePrinciples.map((item, idx) => {
             const Icon = item.icon;
             return (
-              <div
-                key={idx}
-                className="card p-6 md:p-8 rounded-3xl border border-gray-100 dark:border-gray-800 bg-white/80 dark:bg-gray-900/80 backdrop-blur-xl shadow-lg hover:shadow-xl transition-all"
-              >
-                <div className={`p-3.5 rounded-2xl w-fit mb-5 border ${item.color}`}>
-                  <Icon size={24} />
+              <div key={idx} className="dev-card p-6 text-left">
+                <div className="p-2.5 rounded-lg bg-slate-100 dark:bg-slate-800 w-fit mb-4 text-indigo-600 dark:text-indigo-400 border border-slate-200 dark:border-slate-700">
+                  <Icon size={20} />
                 </div>
-                <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
+                <h4 className="text-base font-bold text-slate-900 dark:text-slate-100 mb-2">
                   {item.title}
                 </h4>
-                <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed font-medium">
+                <p className="text-slate-600 dark:text-slate-400 text-xs sm:text-sm leading-relaxed font-normal">
                   {item.description}
                 </p>
               </div>

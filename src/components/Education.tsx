@@ -1,4 +1,4 @@
-import { GraduationCap, Calendar, MapPin, BookOpen, CheckCircle2, Sparkles, FileText, ExternalLink } from 'lucide-react';
+import { GraduationCap, Calendar, MapPin, BookOpen, CheckCircle2, FileText, ExternalLink } from 'lucide-react';
 
 export function Education() {
   const coursework = [
@@ -13,78 +13,76 @@ export function Education() {
   return (
     <section
       id="education"
-      className="py-24 px-4 bg-white dark:bg-gray-900 transition-colors relative overflow-hidden"
+      className="py-24 px-4 bg-slate-50/50 dark:bg-[#090d14] border-y border-slate-200/60 dark:border-slate-800/60 transition-colors"
     >
-      {/* Background Lighting Orbs */}
-      <div className="absolute top-1/3 left-0 w-96 h-96 bg-purple-500/10 rounded-full blur-[100px] pointer-events-none" />
-      <div className="absolute bottom-10 right-0 w-96 h-96 bg-indigo-500/10 rounded-full blur-[100px] pointer-events-none" />
-
-      <div className="max-w-6xl mx-auto relative z-10">
-        <h2 className="section-title mb-4">Education &amp; Academics</h2>
-        <p className="text-center text-gray-600 dark:text-gray-300 max-w-2xl mx-auto mb-16 text-base md:text-lg">
-          Academic foundation in Computer Science and software engineering fundamentals.
-        </p>
+      <div className="max-w-5xl mx-auto">
+        
+        {/* Section Header */}
+        <div className="text-center mb-16">
+          <span className="section-tag">// 03. ACADEMIC BACKGROUND</span>
+          <h2 className="section-title">Education &amp; Core CS Foundations</h2>
+          <p className="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto text-base sm:text-lg">
+            Academic training in computer science, algorithm design, software architecture, and engineering principles.
+          </p>
+        </div>
 
         {/* Education Main Card */}
-        <div className="card p-8 md:p-10 rounded-3xl border border-gray-100 dark:border-gray-800 bg-white/80 dark:bg-gray-900/80 backdrop-blur-xl shadow-xl relative overflow-hidden group">
-          {/* Top Accent Gradient Bar */}
-          <div className="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-amber-500 via-rose-500 to-purple-600" />
-
-          <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-6 mb-8">
+        <div className="dev-card p-8 sm:p-10 text-left">
+          
+          <div className="flex flex-col lg:flex-row lg:items-start justify-between gap-6 mb-6">
             <div className="flex items-start gap-4">
-              <div className="p-3.5 rounded-2xl bg-gradient-to-br from-amber-500 via-rose-500 to-purple-600 text-white shadow-lg shadow-purple-500/20">
-                <GraduationCap size={32} />
+              <div className="p-3 rounded-xl bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 border border-indigo-500/20">
+                <GraduationCap size={28} />
               </div>
 
               <div>
-                <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-100 dark:bg-amber-950/60 text-amber-800 dark:text-amber-300 text-xs font-bold mb-2 border border-amber-200 dark:border-amber-800/40">
-                  <Sparkles size={12} />
+                <div className="inline-flex items-center gap-1.5 font-mono text-xs font-semibold px-2.5 py-1 rounded bg-amber-500/10 text-amber-700 dark:text-amber-400 border border-amber-500/20 mb-2">
                   <span>First Class Distinction (3.79 / 4.00 CGPA)</span>
                 </div>
 
-                <h3 className="text-2xl sm:text-3xl font-black text-gray-900 dark:text-white tracking-tight">
-                  Bachelor&apos;s in Computer Science
+                <h3 className="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-slate-100">
+                  Bachelor of Science in Computer Science
                 </h3>
 
-                <p className="text-lg font-bold bg-gradient-to-r from-purple-600 to-indigo-600 dark:from-purple-400 dark:to-indigo-400 bg-clip-text text-transparent mt-1">
+                <p className="text-base font-semibold text-indigo-600 dark:text-indigo-400 mt-1">
                   University of Ibadan
                 </p>
               </div>
             </div>
 
-            <div className="flex flex-col gap-2 lg:text-right">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 text-xs font-bold lg:justify-end w-fit lg:ml-auto">
-                <Calendar size={14} className="text-purple-500" />
+            <div className="flex flex-col gap-2 font-mono text-xs text-slate-500 dark:text-slate-400 lg:text-right">
+              <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 lg:ml-auto w-fit">
+                <Calendar size={12} className="text-indigo-500" />
                 <span>2023 – 2028 (Currently Studying)</span>
               </div>
-              <div className="inline-flex items-center gap-1.5 text-gray-500 dark:text-gray-400 text-xs font-medium lg:justify-end">
-                <MapPin size={14} className="text-indigo-500" />
+              <div className="inline-flex items-center gap-1 lg:justify-end">
+                <MapPin size={12} />
                 <span>Ibadan, Nigeria</span>
               </div>
             </div>
           </div>
 
-          <p className="text-gray-700 dark:text-gray-200 mb-8 leading-relaxed font-medium text-base md:text-lg">
-            A <strong className="text-amber-600 dark:text-amber-400">First Class (3.79/4.00)</strong> student with a strong theoretical and practical grounding in System Architecture &amp; Design, Data Structures &amp; Algorithms, Software Development Life Cycle (SDLC), and low-level computer science principles.
+          <p className="text-slate-600 dark:text-slate-300 text-sm sm:text-base leading-relaxed mb-8 font-normal">
+            Maintaining a <strong className="text-slate-900 dark:text-slate-100">First Class standing (3.79/4.00)</strong> with a strong grounding in core computer science, discrete mathematics, software engineering life cycles, memory management, and high-performance algorithms.
           </p>
 
-          {/* Core Academic Focus Areas */}
-          <div className="pt-6 border-t border-gray-100 dark:border-gray-800/80">
-            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-4">
-              <h4 className="text-sm font-bold text-gray-900 dark:text-white uppercase tracking-wider flex items-center gap-2">
-                <BookOpen size={16} className="text-purple-600 dark:text-purple-400" />
-                <span>Core Academic Focus Areas</span>
-              </h4>
+          {/* Coursework & Transcript Button */}
+          <div className="pt-6 border-t border-slate-200/80 dark:border-slate-800">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-4">
+              <div className="font-mono text-xs font-bold uppercase tracking-wider text-slate-700 dark:text-slate-300 flex items-center gap-2">
+                <BookOpen size={15} className="text-indigo-500" />
+                <span>CORE_ACADEMIC_SUBJECTS</span>
+              </div>
 
               <a
                 href="/transcript.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-amber-500 via-rose-500 to-purple-600 hover:from-amber-600 hover:to-purple-700 text-white rounded-xl text-xs font-bold transition-all shadow-md hover:shadow-lg group w-fit"
+                className="inline-flex items-center gap-1.5 font-mono text-xs font-semibold px-3 py-1.5 rounded-lg bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900 hover:bg-slate-800 dark:hover:bg-white transition-colors w-fit"
               >
-                <FileText size={16} />
+                <FileText size={14} />
                 <span>View Academic Transcript</span>
-                <ExternalLink size={14} className="group-hover:translate-x-0.5 transition-transform" />
+                <ExternalLink size={12} />
               </a>
             </div>
 
@@ -92,14 +90,15 @@ export function Education() {
               {coursework.map((item, idx) => (
                 <div
                   key={idx}
-                  className="flex items-center gap-2.5 p-3 rounded-2xl bg-gray-50 dark:bg-gray-800/60 border border-gray-100 dark:border-gray-700/60 text-xs font-semibold text-gray-800 dark:text-gray-200"
+                  className="flex items-center gap-2.5 p-3 rounded-xl bg-slate-50 dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 text-xs font-medium text-slate-700 dark:text-slate-300"
                 >
-                  <CheckCircle2 size={16} className="text-emerald-500 flex-shrink-0" />
+                  <CheckCircle2 size={15} className="text-emerald-500 shrink-0" />
                   <span>{item}</span>
                 </div>
               ))}
             </div>
           </div>
+
         </div>
 
       </div>

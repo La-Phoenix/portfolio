@@ -1,4 +1,4 @@
-import { Calendar, MapPin, Briefcase, Award, ExternalLink, Building2, CheckCircle2 } from 'lucide-react';
+import { Calendar, MapPin, Briefcase, ExternalLink, Building2, CheckCircle2 } from 'lucide-react';
 
 const experiences = [
   {
@@ -67,80 +67,72 @@ export function Experience() {
   return (
     <section
       id="experience"
-      className="py-24 px-4 bg-gray-50 dark:bg-gray-800/60 transition-colors relative overflow-hidden"
+      className="py-24 px-4 bg-white dark:bg-[#0b0f17] transition-colors"
     >
-      {/* Background Orbs */}
-      <div className="absolute top-1/3 right-0 w-96 h-96 bg-purple-500/10 rounded-full blur-[100px] pointer-events-none" />
-      <div className="absolute bottom-10 left-0 w-96 h-96 bg-indigo-500/10 rounded-full blur-[100px] pointer-events-none" />
+      <div className="max-w-5xl mx-auto">
+        
+        {/* Section Header */}
+        <div className="text-center mb-16">
+          <span className="section-tag">// 02. WORK HISTORY</span>
+          <h2 className="section-title">Professional Engineering Experience</h2>
+          <p className="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto text-base sm:text-lg">
+            Software engineering roles focused on backend API development, SaaS platforms, and enterprise software systems.
+          </p>
+        </div>
 
-      <div className="max-w-6xl mx-auto relative z-10">
-        <h2 className="section-title mb-4">Professional Experience</h2>
-        <p className="text-center text-gray-600 dark:text-gray-300 max-w-2xl mx-auto mb-16 text-base md:text-lg">
-          3+ years of building web applications, backend APIs, enterprise microservices, and SaaS platforms across diverse engineering roles.
-        </p>
-
-        <div className="space-y-8">
+        {/* Timeline Stack */}
+        <div className="space-y-8 relative">
           {experiences.map((exp) => (
-            <div
-              key={exp.id}
-              className="card p-8 md:p-10 rounded-3xl border border-gray-100 dark:border-gray-800 bg-white/80 dark:bg-gray-900/80 backdrop-blur-xl shadow-xl hover:shadow-2xl transition-all relative overflow-hidden group"
-            >
-              {/* Left Accent Bar */}
-              <div className="absolute top-0 left-0 w-1.5 h-full bg-gradient-to-b from-purple-600 via-indigo-600 to-blue-600 group-hover:w-2 transition-all duration-300" />
-
-              <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-4 mb-6">
+            <div key={exp.id} className="dev-card p-6 sm:p-8 text-left">
+              
+              {/* Card Top: Position & Metadata */}
+              <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div>
-                  <div className="flex items-center gap-2.5 mb-2">
-                    <div className="p-2 rounded-xl bg-purple-100 dark:bg-purple-950/60 text-purple-600 dark:text-purple-400">
-                      <Briefcase size={20} />
-                    </div>
-                    <h3 className="text-2xl md:text-3xl font-black text-gray-900 dark:text-white">
+                  <div className="flex items-center gap-2 mb-1">
+                    <Briefcase size={18} className="text-indigo-600 dark:text-indigo-400" />
+                    <h3 className="text-xl sm:text-2xl font-bold text-slate-900 dark:text-slate-100">
                       {exp.position}
                     </h3>
                   </div>
 
-                  <div className="flex items-center gap-2 mt-1">
-                    <Building2 size={16} className="text-purple-600 dark:text-purple-400" />
-                    <span className="text-lg font-bold bg-gradient-to-r from-purple-600 to-indigo-600 dark:from-purple-400 dark:to-indigo-400 bg-clip-text text-transparent">
-                      {exp.company}
-                    </span>
+                  <div className="flex items-center gap-2 font-mono text-sm font-semibold text-slate-700 dark:text-slate-300">
+                    <Building2 size={15} className="text-slate-400" />
+                    <span>{exp.company}</span>
                   </div>
                 </div>
 
-                <div className="flex flex-col gap-2 md:text-right">
-                  <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 text-xs font-bold md:justify-end w-fit md:ml-auto">
-                    <Calendar size={14} className="text-purple-500" />
+                <div className="flex flex-wrap sm:flex-col items-start sm:items-end gap-2 font-mono text-xs text-slate-500 dark:text-slate-400">
+                  <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700">
+                    <Calendar size={12} className="text-indigo-500" />
                     <span>{exp.period}</span>
                   </div>
-                  <div className="inline-flex items-center gap-1.5 text-gray-500 dark:text-gray-400 text-xs font-medium md:justify-end">
-                    <MapPin size={14} className="text-indigo-500" />
+                  <div className="inline-flex items-center gap-1">
+                    <MapPin size={12} />
                     <span>{exp.location}</span>
                   </div>
                 </div>
               </div>
 
-              <p className="text-gray-700 dark:text-gray-200 mb-6 leading-relaxed font-semibold text-base">
+              {/* Description */}
+              <p className="text-slate-600 dark:text-slate-300 text-sm leading-relaxed mb-4 font-normal">
                 {exp.description}
               </p>
 
-              {/* Responsibilities List */}
-              <div className="mb-6 space-y-2.5">
+              {/* Bullet Responsibilities */}
+              <div className="space-y-2 mb-6">
                 {exp.responsibilities.map((res, rIdx) => (
-                  <div key={rIdx} className="flex items-start gap-2.5 text-sm text-gray-600 dark:text-gray-300 font-medium">
-                    <CheckCircle2 size={16} className="text-purple-500 flex-shrink-0 mt-0.5" />
+                  <div key={rIdx} className="flex items-start gap-2 text-xs sm:text-sm text-slate-600 dark:text-slate-300">
+                    <CheckCircle2 size={15} className="text-indigo-500 shrink-0 mt-0.5" />
                     <span>{res}</span>
                   </div>
                 ))}
               </div>
 
-              {/* Highlights & Certificate Button */}
-              <div className="flex flex-wrap items-center justify-between gap-4 pt-6 border-t border-gray-100 dark:border-gray-800/80">
-                <div className="flex flex-wrap gap-2">
+              {/* Footer Tech Tags & Certificate Link */}
+              <div className="flex flex-wrap items-center justify-between gap-4 pt-4 border-t border-slate-200/80 dark:border-slate-800">
+                <div className="flex flex-wrap gap-1.5">
                   {exp.highlights.map((skill, idx) => (
-                    <span
-                      key={idx}
-                      className="px-3 py-1 text-xs font-semibold bg-purple-50 dark:bg-purple-950/60 text-purple-700 dark:text-purple-300 rounded-lg border border-purple-100 dark:border-purple-800/40"
-                    >
+                    <span key={idx} className="tech-badge">
                       {skill}
                     </span>
                   ))}
@@ -151,17 +143,18 @@ export function Experience() {
                     href={exp.certificateLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-4 py-2.5 bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white rounded-xl text-xs font-bold transition-all shadow-md hover:shadow-lg group"
+                    className="inline-flex items-center gap-1.5 font-mono text-xs font-semibold px-3 py-1.5 rounded-lg bg-emerald-500/10 text-emerald-700 dark:text-emerald-400 border border-emerald-500/30 hover:bg-emerald-500/20 transition-colors"
                   >
-                    <Award size={16} />
-                    <span>View Internship Certificate</span>
-                    <ExternalLink size={14} className="group-hover:translate-x-0.5 transition-transform" />
+                    <span>Internship Certificate</span>
+                    <ExternalLink size={12} />
                   </a>
                 )}
               </div>
+
             </div>
           ))}
         </div>
+
       </div>
     </section>
   );

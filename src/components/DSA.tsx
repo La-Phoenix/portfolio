@@ -12,9 +12,9 @@ const dsaTopics = [
   'Arrays & Hashing',
   'Two Pointers',
   'Sliding Window',
-  'Stack',
+  'Stack & Queue',
   'Binary Search',
-  'Linked List',
+  'Linked Lists',
   'Trees & BST',
   'Tries',
   'Heap / Priority Queue',
@@ -58,78 +58,78 @@ export function DSA() {
   };
 
   return (
-    <section id="dsa" className="py-20 px-4 bg-gray-50 dark:bg-gray-800/60 transition-colors">
+    <section id="dsa" className="py-24 px-4 bg-slate-50/50 dark:bg-[#090d14] border-y border-slate-200/60 dark:border-slate-800/60 transition-colors">
       <div className="max-w-6xl mx-auto">
-        <h2 className="section-title mb-4">DSA &amp; Problem Solving</h2>
-        <p className="text-center text-gray-600 dark:text-gray-300 max-w-2xl mx-auto mb-12 text-base md:text-lg">
-          Continuous algorithmic practice and data structure mastery. Solving NeetCode &amp; LeetCode challenges to build clean, performant, and optimal code.
-        </p>
+        
+        {/* Section Header */}
+        <div className="text-center mb-16">
+          <span className="section-tag">// 06. ALGORITHMIC PRACTICE</span>
+          <h2 className="section-title">Data Structures &amp; Problem Solving</h2>
+          <p className="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto text-base sm:text-lg">
+            Continuous practice solving NeetCode &amp; LeetCode challenges to engineer optimal algorithms with strict time and space complexity limits.
+          </p>
+        </div>
 
         {/* Top Highlights Grid */}
         <div className="grid md:grid-cols-3 gap-6 mb-12">
-          {/* Card 1 */}
-          <div className="card p-6 border border-gray-100 dark:border-gray-700/60 hover:shadow-xl transition-all">
+          
+          <div className="dev-card p-6 text-left">
             <div className="flex items-center gap-3 mb-3">
-              <div className="p-3 rounded-xl bg-purple-100 dark:bg-purple-900/60 text-purple-600 dark:text-purple-300">
-                <Trophy size={26} />
+              <div className="p-2.5 rounded-lg bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400 border border-indigo-200/80 dark:border-indigo-800/40">
+                <Trophy size={20} />
               </div>
               <div>
-                <h3 className="text-2xl font-black text-gray-900 dark:text-white">Active Solving</h3>
-                <p className="text-xs font-semibold text-purple-600 dark:text-purple-400">NeetCode 150 &amp; Blind 75</p>
+                <h3 className="text-lg font-bold text-slate-900 dark:text-slate-100">Active Practice</h3>
+                <p className="font-mono text-xs text-indigo-600 dark:text-indigo-400">NeetCode 150 &amp; Blind 75</p>
               </div>
             </div>
-            <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
-              Consistently sharpening core problem-solving intuition across fundamental array manipulations, tree traversals, and dynamic programming.
+            <p className="text-slate-600 dark:text-slate-300 text-xs sm:text-sm leading-relaxed font-normal">
+              Consistently sharpening core problem-solving intuition across fundamental array manipulations, graph traversals, and dynamic programming.
             </p>
           </div>
 
-          {/* Card 2 */}
-          <div className="card p-6 border border-gray-100 dark:border-gray-700/60 hover:shadow-xl transition-all">
+          <div className="dev-card p-6 text-left">
             <div className="flex items-center gap-3 mb-3">
-              <div className="p-3 rounded-xl bg-indigo-100 dark:bg-indigo-900/60 text-indigo-600 dark:text-indigo-300">
-                <Zap size={26} />
+              <div className="p-2.5 rounded-lg bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400 border border-indigo-200/80 dark:border-indigo-800/40">
+                <Zap size={20} />
               </div>
               <div>
-                <h3 className="text-2xl font-black text-gray-900 dark:text-white">Optimal Solutions</h3>
-                <p className="text-xs font-semibold text-indigo-600 dark:text-indigo-400">Time &amp; Space Complexity</p>
+                <h3 className="text-lg font-bold text-slate-900 dark:text-slate-100">Big-O Efficiency</h3>
+                <p className="font-mono text-xs text-indigo-600 dark:text-indigo-400">Time &amp; Space Complexity</p>
               </div>
             </div>
-            <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
-              Prioritizing Big-O efficiency—striving for optimal <code className="text-xs bg-indigo-50 dark:bg-indigo-950 px-1 py-0.5 rounded text-indigo-600 dark:text-indigo-300">O(1)</code> space and <code className="text-xs bg-indigo-50 dark:bg-indigo-950 px-1 py-0.5 rounded text-indigo-600 dark:text-indigo-300">O(N)</code> runtime performance.
+            <p className="text-slate-600 dark:text-slate-300 text-xs sm:text-sm leading-relaxed font-normal">
+              Prioritizing optimal Big-O performance—striving for <code className="font-mono text-xs font-semibold px-1 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-indigo-600 dark:text-indigo-400">O(1)</code> space and <code className="font-mono text-xs font-semibold px-1 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-indigo-600 dark:text-indigo-400">O(N)</code> or <code className="font-mono text-xs font-semibold px-1 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-indigo-600 dark:text-indigo-400">O(N log N)</code> execution bounds.
             </p>
           </div>
 
-          {/* Card 3 */}
-          <div className="card p-6 border border-gray-100 dark:border-gray-700/60 hover:shadow-xl transition-all">
+          <div className="dev-card p-6 text-left">
             <div className="flex items-center gap-3 mb-3">
-              <div className="p-3 rounded-xl bg-blue-100 dark:bg-blue-900/60 text-blue-600 dark:text-blue-300">
-                <Brain size={26} />
+              <div className="p-2.5 rounded-lg bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400 border border-indigo-200/80 dark:border-indigo-800/40">
+                <Brain size={20} />
               </div>
               <div>
-                <h3 className="text-2xl font-black text-gray-900 dark:text-white">Pattern Mindset</h3>
-                <p className="text-xs font-semibold text-blue-600 dark:text-blue-400">Reusable Algorithmic Blueprints</p>
+                <h3 className="text-lg font-bold text-slate-900 dark:text-slate-100">Pattern Blueprint</h3>
+                <p className="font-mono text-xs text-indigo-600 dark:text-indigo-400">Reusable Algorithmic Design</p>
               </div>
             </div>
-            <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
-              Applying pattern-recognition to real-world engineering—writing scalable algorithms for production database indexing, search, and data processing.
+            <p className="text-slate-600 dark:text-slate-300 text-xs sm:text-sm leading-relaxed font-normal">
+              Applying pattern recognition to real-world engineering—writing scalable algorithms for production database indexing, search, and queue execution.
             </p>
           </div>
+
         </div>
 
-        {/* GitHub Progress Repository Banner */}
-        <div className="card p-6 md:p-8 mb-12 bg-gradient-to-r from-gray-900 via-indigo-950 to-purple-950 text-white rounded-2xl border border-indigo-900/50 shadow-2xl flex flex-col md:flex-row justify-between items-center gap-6">
+        {/* GitHub Repository Banner */}
+        <div className="dev-card p-6 sm:p-8 mb-12 bg-slate-900 dark:bg-[#0e131f] text-white flex flex-col md:flex-row justify-between items-center gap-6 text-left">
           <div className="flex items-center gap-4">
-            <div className="p-4 bg-white/10 rounded-2xl backdrop-blur-md">
-              <Code2 size={36} className="text-purple-400" />
+            <div className="p-3.5 bg-slate-800 rounded-xl border border-slate-700 text-indigo-400 shrink-0">
+              <Code2 size={28} />
             </div>
             <div>
-              <div className="flex items-center gap-2 mb-1">
-                <span className="px-2.5 py-0.5 text-xs font-bold bg-purple-500/30 text-purple-300 rounded-full border border-purple-400/30">
-                  Open Source Repo
-                </span>
-              </div>
-              <h3 className="text-xl md:text-2xl font-bold text-white">Track My NeetCode Submissions</h3>
-              <p className="text-gray-300 text-sm mt-1">
+              <div className="font-mono text-xs font-semibold text-indigo-400 mb-1">OPEN_SOURCE_REPO</div>
+              <h3 className="text-xl font-bold text-slate-100">Track My NeetCode Submissions</h3>
+              <p className="text-slate-400 text-xs sm:text-sm mt-1">
                 Explore my solution codebase, time/space complexity notes, and daily progress log on GitHub.
               </p>
             </div>
@@ -138,117 +138,114 @@ export function DSA() {
             href="https://github.com/La-Phoenix/neetcode-submissions"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 px-6 py-3.5 bg-purple-600 hover:bg-purple-500 text-white rounded-xl transition-all font-bold shadow-lg hover:shadow-purple-500/25 flex-shrink-0 group"
+            className="inline-flex items-center gap-2 px-5 py-3 bg-indigo-600 hover:bg-indigo-500 text-white rounded-xl text-xs font-mono font-semibold transition-colors shrink-0"
           >
-            <Github size={20} />
-            <span>View GitHub Repository</span>
-            <ExternalLink size={16} className="group-hover:translate-x-1 transition-transform" />
+            <Github size={16} />
+            <span>View Submissions Repository</span>
+            <ExternalLink size={14} />
           </a>
         </div>
 
         {/* Topic Badges */}
-        <div className="card p-6 md:p-8 mb-12">
-          <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2">
-            <CheckCircle2 className="text-purple-600 dark:text-purple-400" size={20} />
-            <span>Core Topics &amp; Patterns Covered</span>
+        <div className="dev-card p-6 sm:p-8 mb-12 text-left">
+          <h3 className="text-base font-bold text-slate-900 dark:text-slate-100 mb-4 flex items-center gap-2">
+            <CheckCircle2 className="text-indigo-600 dark:text-indigo-400" size={18} />
+            <span>Core Patterns &amp; Topics Covered</span>
           </h3>
           <div className="flex flex-wrap gap-2">
             {dsaTopics.map((topic, idx) => (
-              <span
-                key={idx}
-                className="px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-purple-50 dark:bg-purple-950/60 text-purple-700 dark:text-purple-300 border border-purple-200 dark:border-purple-800/40 hover:scale-105 transition-transform"
-              >
+              <span key={idx} className="tech-badge">
                 {topic}
               </span>
             ))}
           </div>
         </div>
 
-        {/* NeetCode Screenshots Showcase Gallery */}
-        <div>
-          <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6 flex items-center justify-between">
-            <span>NeetCode Progress Screenshots</span>
-            <span className="text-xs font-medium text-gray-500 dark:text-gray-400">Click any screenshot to view full resolution</span>
-          </h3>
+        {/* Screenshots Showcase */}
+        <div className="text-left">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-6">
+            <h3 className="text-xl font-bold text-slate-900 dark:text-slate-100">
+              NeetCode Progress Screenshots
+            </h3>
+            <span className="font-mono text-xs text-slate-500">Click any screenshot to expand</span>
+          </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {neetcodeScreenshots.map((item, index) => (
               <div
                 key={item.id}
                 onClick={() => setSelectedImageIndex(index)}
-                className="card p-2 rounded-xl overflow-hidden cursor-pointer group border border-gray-200 dark:border-gray-700/60 hover:border-purple-500 dark:hover:border-purple-400 transition-all hover:shadow-xl bg-white dark:bg-gray-900"
+                className="dev-card p-2 cursor-pointer group hover:border-indigo-500 dark:hover:border-indigo-400 transition-colors"
               >
-                <div className="relative h-44 w-full rounded-lg overflow-hidden bg-gray-100 dark:bg-gray-800">
+                <div className="relative h-40 w-full rounded-lg overflow-hidden bg-slate-100 dark:bg-slate-800">
                   <img
                     src={item.src}
                     alt={item.title}
                     className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-2 text-white font-medium text-xs">
+                  <div className="absolute inset-0 bg-slate-950/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-1.5 text-white font-mono text-xs font-semibold">
                     <Maximize2 size={16} />
                     <span>Expand</span>
                   </div>
                 </div>
-                <div className="p-2 text-center">
-                  <p className="text-xs font-semibold text-gray-700 dark:text-gray-300 truncate">
-                    {item.title}
-                  </p>
-                </div>
+                <p className="p-2 font-mono text-[11px] font-medium text-slate-700 dark:text-slate-300 truncate text-center">
+                  {item.title}
+                </p>
               </div>
             ))}
           </div>
         </div>
+
       </div>
 
       {/* Lightbox Modal */}
       {selectedImageIndex !== null && (
         <div
           onClick={() => setSelectedImageIndex(null)}
-          className="fixed inset-0 z-50 bg-black/85 backdrop-blur-md flex items-center justify-center p-4 md:p-8 animate-fade-in"
+          className="fixed inset-0 z-50 bg-slate-950/85 backdrop-blur-sm flex items-center justify-center p-4"
         >
           <div
             onClick={(e) => e.stopPropagation()}
-            className="relative max-w-5xl w-full bg-gray-900 rounded-2xl overflow-hidden shadow-2xl border border-gray-800 flex flex-col max-h-[90vh]"
+            className="relative max-w-5xl w-full bg-slate-900 rounded-2xl overflow-hidden shadow-2xl border border-slate-800 flex flex-col max-h-[90vh]"
           >
-            {/* Modal Header */}
-            <div className="flex justify-between items-center px-6 py-4 border-b border-gray-800 bg-gray-900/90 text-white">
+            {/* Header */}
+            <div className="flex justify-between items-center px-6 py-3.5 border-b border-slate-800 bg-slate-900 text-white">
               <div>
-                <h4 className="text-lg font-bold text-white">
+                <h4 className="text-base font-bold text-slate-100">
                   {neetcodeScreenshots[selectedImageIndex].title}
                 </h4>
-                <p className="text-xs text-gray-400">
+                <p className="font-mono text-xs text-slate-400">
                   Screenshot {selectedImageIndex + 1} of {neetcodeScreenshots.length}
                 </p>
               </div>
               <button
                 onClick={() => setSelectedImageIndex(null)}
-                className="p-2 rounded-full bg-gray-800 hover:bg-gray-700 text-gray-300 hover:text-white transition-colors"
+                className="p-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white transition-colors"
                 aria-label="Close modal"
               >
-                <X size={20} />
+                <X size={18} />
               </button>
             </div>
 
-            {/* Modal Image */}
+            {/* Display */}
             <div className="relative flex-1 bg-black flex items-center justify-center p-4 overflow-hidden min-h-[300px]">
               <img
                 src={neetcodeScreenshots[selectedImageIndex].src}
                 alt={neetcodeScreenshots[selectedImageIndex].title}
-                className="max-h-[72vh] max-w-full object-contain rounded-lg shadow-xl"
+                className="max-h-[72vh] max-w-full object-contain rounded-lg"
               />
 
-              {/* Navigation Arrows */}
               <button
                 onClick={handlePrev}
-                className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-gray-900/80 hover:bg-purple-600 text-white p-3 rounded-full transition-all border border-gray-700"
+                className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-slate-900/80 hover:bg-slate-800 text-white p-2.5 rounded-full transition-colors border border-slate-700"
               >
-                <ChevronLeft size={24} />
+                <ChevronLeft size={20} />
               </button>
               <button
                 onClick={handleNext}
-                className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-gray-900/80 hover:bg-purple-600 text-white p-3 rounded-full transition-all border border-gray-700"
+                className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-slate-900/80 hover:bg-slate-800 text-white p-2.5 rounded-full transition-colors border border-slate-700"
               >
-                <ChevronRight size={24} />
+                <ChevronRight size={20} />
               </button>
             </div>
           </div>

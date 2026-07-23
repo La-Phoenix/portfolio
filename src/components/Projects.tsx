@@ -4,10 +4,10 @@ import { ProjectCard } from './ProjectCard';
 const industryProjects = [
   {
     id: 1,
-    title: 'Enterprise Banking Account System',
+    title: 'Regent Account Management System',
     company: 'Regent Microfinance Bank',
-    description: 'Standalone banking microservice digitizing account opening, tier upgrades, and staff audit trails. Features real-time BVN/NIN identity verification, multi-tier approval workflows (Internal Control & Operations Head), PIN-authenticated sensitive operations, asynchronous BullMQ queue processing, and Core Banking System (BankOne CBA) integration.',
-    technologies: ['NestJS', 'TypeScript', 'PostgreSQL', 'Prisma ORM', 'Redis', 'BullMQ Queues', 'Next.js', 'Core Banking (BankOne)', 'BVN API Integration', 'RBAC & Audit Compliance'],
+    description: 'Enterprise internal banking core account system engineered for Regent MFB staff. Features NestJS REST API Gateway, Next.js Staff Portal, BullMQ job queues, Redis caching, Prisma ORM on PostgreSQL, BVN Verification engine, and BankOne CBA integration.',
+    technologies: ['NestJS', 'Next.js App Router', 'TypeScript', 'PostgreSQL', 'Prisma ORM', 'BullMQ', 'Redis', 'BankOne CBA API', 'BVN Verification', 'Tailwind CSS'],
     images: [
       '/Images/banking/architecture.svg',
     ],
@@ -16,10 +16,10 @@ const industryProjects = [
   },
   {
     id: 2,
-    title: 'Whatsella',
+    title: 'Whatsella Commerce SaaS',
     company: 'ReenEdge Solutions',
-    description: 'Commerce platform turning WhatsApp into a sales engine. Enable businesses to list products, automate customer conversations with AI, manage storefronts, send bulk messages, track orders, and handle secure payments — all from one dashboard.',
-    technologies: ['ASP.NET Core', 'PostgreSQL', 'PayStack', 'Firebase Notifications', 'WhatsApp API', 'SaaS', 'Multi-Tenancy', 'AI Automation'],
+    description: 'An AI-powered WhatsApp commerce SaaS platform empowering businesses to automatically generate online sub-domain stores, process customer checkout orders, track product inventory, and automate direct payouts.',
+    technologies: ['ASP.NET Core', 'PostgreSQL', 'React', 'TypeScript', 'PayStack Payouts', 'Subdomain Multi-Tenancy', 'Tailwind CSS'],
     images: [
       '/Images/whatsella/whatsella1.png',
       '/Images/whatsella/whatsella2.png',
@@ -30,10 +30,10 @@ const industryProjects = [
   },
   {
     id: 3,
-    title: 'Zheeta',
+    title: 'Zheeta — Social Networking & Gifting Platform',
     company: 'DeCloud23 Technologies',
-    description: 'Social networking & matchmaking platform with smart discovery, nearby hangouts, and buddy event creation. Features private messaging, profile boosting, virtual gifting with redeemable coins, in-app wallet integration with bank withdrawals, fundraising, and a 10% affiliate referral program.',
-    technologies: ['ASP.NET Core', 'PostgreSQL', 'Docker', 'Clean Architecture', 'SignalR', 'Paystack', 'In-App Wallet', 'Affiliate Engine'],
+    description: 'A social discovery and gifting web application enabling users to match based on criteria, send and receive redeemable virtual gifts, discover nearby profiles, and earn affiliate downline commissions.',
+    technologies: ['ASP.NET Core', 'React', 'TypeScript', 'Node.js', 'PostgreSQL', 'Virtual Wallet Engine'],
     images: [
       '/Images/zheeta/zheeta1.png',
       '/Images/zheeta/zheeta2.png',
@@ -48,8 +48,8 @@ const industryProjects = [
     id: 4,
     title: 'Games4Africa / Games365Hub',
     company: 'DeCloud23 Technologies',
-    description: 'Reward-based multiplayer gaming platform enabling players worldwide to compete in solo matches and tournaments to earn cash and gift rewards. Combines classic digital games with real-time multiplayer engagement and performance reward systems.',
-    technologies: ['Node.js', 'Express.js', 'MySQL', 'EJS', 'WebSockets', 'In-App Purchases - Android and iOS', 'Fincra', 'PayStack','Reward Engine'],
+    description: 'A global reward-based competitive gaming platform enabling players to connect, join solo competitions and tournaments, track leaderboard rankings, and redeem performance rewards.',
+    technologies: ['ASP.NET Core', 'SignalR WebSockets', 'React', 'Node.js', 'PostgreSQL', 'Leaderboard Engine'],
     images: [
       '/Images/games4africa/games4africa1.png',
       '/Images/games4africa/games4africa2.png',
@@ -62,10 +62,10 @@ const industryProjects = [
   },
   {
     id: 5,
-    title: 'iGEMBA - Digital Shopfloor',
+    title: 'iGEMBA — Digital Shopfloor Gemba Walk Platform',
     company: 'Ithena',
-    description: 'Industry 4.0 Digital Gemba Walk solution for smart manufacturing operations. Replaces manual paper huddles with real-time KPI tracking, configurable checklists, Kanban issue management, and advanced historical analytics — delivering a 26% reduction in issue resolution time for a global battery manufacturer.',
-    technologies: ['Angular', 'Express.js', 'PostgreSQL', 'DevExtreme/DevExpress', 'Kanban Boards', 'Industry 4.0', 'Analytics Dashboards'],
+    description: 'An Industry 4.0 shopfloor digitizing solution replacing manual paper Gemba walks with structured digital checklists, real-time KPI generation, issue tracking, and analytics dashboards.',
+    technologies: ['Angular', 'Express.js', 'Node.js', 'MongoDB', 'PostgreSQL', 'DevExtreme Analytics', 'REST APIs'],
     images: [
       '/Images/igemba/igemba1.png',
       '/Images/igemba/igemba2.png',
@@ -77,10 +77,10 @@ const industryProjects = [
   },
   {
     id: 6,
-    title: 'Kicest',
+    title: 'Kicest — Instant E-Commerce Store Generator',
     company: 'Kicest',
-    description: 'Instant e-commerce storefront platform empowering businesses to launch custom online stores in minutes and boost sales by up to 150%. Features automated inventory management, direct bank payout routing, real-time order alerts, smart buyer analytics, loyalty marketing tools, integrated logistics, and QR digital business cards.',
-    technologies: ['Next.js App Router', 'React', 'Node.js', 'PostgreSQL', 'Payment Gateways', 'SaaS', 'Multi-Tenancy', 'Subdomain Engine'],
+    description: 'An instant e-commerce store platform enabling merchants to launch online storefronts, manage product inventories, process customer orders, and route bank payouts.',
+    technologies: ['Next.js App Router', 'React', 'TypeScript', 'Tailwind CSS', 'Subdomain Routing', 'SEO Engine'],
     images: [
       '/Images/kicest/kicest1.png',
       '/Images/kicest/kicest2.png',
@@ -102,15 +102,9 @@ const personalProjects = [
     technologies: ['.NET 9.0', 'React 19', 'TypeScript', 'SignalR', 'Groq (Llama 3.3)', 'Semantic Kernel', 'Gemini 3072d Embeddings', 'Qdrant Vector DB', 'PostgreSQL (Supabase)', 'EF Core 9', 'Tailwind CSS v4'],
     images: [
       '/Images/littlephoenix/architecture.svg',
-      '/Images/littlephoenix/littlephoenix1.png',
-      '/Images/littlephoenix/littlephoenix2.png',
-      '/Images/littlephoenix/littlephoenix3.png',
-      '/Images/littlephoenix/littlephoenix4.png',
-      '/Images/littlephoenix/littlephoenix5.png',
-      '/Images/littlephoenix/littlephoenix6.png',
     ],
-    link: 'https://littlephoenixai.vercel.app',
-    githubLink: 'https://github.com/La-Phoenix/AIRadAPI',
+    link: undefined,
+    githubLink: undefined,
   },
   {
     id: 2,
@@ -124,8 +118,8 @@ const personalProjects = [
       '/Images/researchhub/researchhub3.png',
       '/Images/researchhub/researchhub4.png',
     ],
-    link: 'https://res-crmp.justinch.dev',
-    githubLink: 'https://github.com/La-Phoenix/CollaborativeResearchManagmentPlatform',
+    link: undefined,
+    githubLink: undefined,
   },
 ];
 
@@ -137,59 +131,52 @@ export function Projects() {
   return (
     <section
       id="projects"
-      className="py-20 px-4 bg-white dark:bg-gray-900 transition-colors"
+      className="py-24 px-4 bg-slate-50/50 dark:bg-[#090d14] border-y border-slate-200/60 dark:border-slate-800/60 transition-colors"
     >
       <div className="max-w-6xl mx-auto">
-        <h2 className="section-title mb-12">Featured Projects</h2>
+        
+        {/* Section Header */}
+        <div className="text-center mb-12">
+          <span className="section-tag">// 04. FEATURED PROJECTS</span>
+          <h2 className="section-title">Engineering Portfolio &amp; Systems</h2>
+          <p className="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto text-base sm:text-lg">
+            Production software applications, banking systems, SaaS products, and personal open-source projects.
+          </p>
+        </div>
 
-        {/* Tabs */}
-        <div className="flex gap-4 mb-12 justify-center">
-          <button
-            onClick={() => setActiveTab('industry')}
-            className={`px-6 py-3 font-semibold rounded-lg transition-all ${
-              activeTab === 'industry'
-                ? 'bg-gradient-to-r from-purple-600 to-indigo-600 text-white shadow-lg'
-                : 'bg-gray-200 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-700'
-            }`}
-          >
-            Industry Projects
-          </button>
-          <button
-            onClick={() => setActiveTab('personal')}
-            className={`px-6 py-3 font-semibold rounded-lg transition-all ${
-              activeTab === 'personal'
-                ? 'bg-gradient-to-r from-purple-600 to-indigo-600 text-white shadow-lg'
-                : 'bg-gray-200 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-700'
-            }`}
-          >
-            Personal Projects
-          </button>
+        {/* Tab Selector */}
+        <div className="flex justify-center mb-12">
+          <div className="inline-flex p-1 rounded-xl bg-slate-200/80 dark:bg-slate-800/80 border border-slate-300/60 dark:border-slate-700/60 font-mono text-xs font-semibold">
+            <button
+              onClick={() => setActiveTab('industry')}
+              className={`px-5 py-2 rounded-lg transition-all cursor-pointer ${
+                activeTab === 'industry'
+                  ? 'bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900 shadow-sm'
+                  : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100'
+              }`}
+            >
+              Industry Work ({industryProjects.length})
+            </button>
+            <button
+              onClick={() => setActiveTab('personal')}
+              className={`px-5 py-2 rounded-lg transition-all cursor-pointer ${
+                activeTab === 'personal'
+                  ? 'bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900 shadow-sm'
+                  : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100'
+              }`}
+            >
+              Personal Systems ({personalProjects.length})
+            </button>
+          </div>
         </div>
 
         {/* Projects Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project) => (
-            <ProjectCard
-              key={project.id}
-              title={project.title}
-              company={project.company}
-              description={project.description}
-              technologies={project.technologies}
-              images={project.images}
-              link={project.link || undefined}
-              githubLink={project.githubLink || undefined}
-            />
+            <ProjectCard key={project.id} {...project} />
           ))}
         </div>
 
-        {/* Placeholder for empty personal projects */}
-        {activeTab === 'personal' && personalProjects.length === 0 && (
-          <div className="text-center py-12">
-            <p className="text-gray-600 dark:text-gray-400 text-lg">
-              Personal projects coming soon. Add your portfolio projects here!
-            </p>
-          </div>
-        )}
       </div>
     </section>
   );
