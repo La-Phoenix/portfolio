@@ -77,13 +77,13 @@ export function Footer() {
             </h4>
             <div className="space-y-3">
               <a
-                href="https://github.com/samuelokundalaiye"
+                href="https://github.com/la-phoenix"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 p-3 rounded-xl bg-slate-800/80 hover:bg-slate-800 text-slate-200 border border-slate-700/80 transition-colors group"
               >
                 <Github size={16} className="text-slate-400 group-hover:text-indigo-400" />
-                <span className="font-mono text-xs">github.com/samuelokundalaiye</span>
+                <span className="font-mono text-xs">github.com/la-phoenix</span>
               </a>
 
               <a
