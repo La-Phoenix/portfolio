@@ -103,8 +103,8 @@ const personalProjects = [
     images: [
       '/Images/littlephoenix/architecture.svg',
     ],
-    link: undefined,
-    githubLink: undefined,
+    link: 'https://littlephoenix.app',
+    githubLink: 'https://github.com/La-Phoenix/AIRadAPI',
   },
   {
     id: 2,
@@ -118,8 +118,8 @@ const personalProjects = [
       '/Images/researchhub/researchhub3.png',
       '/Images/researchhub/researchhub4.png',
     ],
-    link: undefined,
-    githubLink: undefined,
+    link: 'https://res-crmp.justinch.dev',
+    githubLink: 'https://github.com/La-Phoenix/CollaborativeResearchManagmentPlatform',
   },
 ];
 
