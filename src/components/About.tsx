@@ -1,4 +1,4 @@
-import { Github, FileText, Code2, ShieldCheck, Cpu, ExternalLink, Mail, Layers } from 'lucide-react';
+import { Github, FileText, Code2, ShieldCheck, Cpu, ExternalLink, Mail, Layers, Linkedin } from 'lucide-react';
 
 export function About() {
   const corePrinciples = [
@@ -85,6 +85,23 @@ export function About() {
               </h3>
 
               <div className="space-y-3">
+                {/* LinkedIn */}
+                <a
+                  href="https://www.linkedin.com/in/samuel-okundalaiye-11675a40a"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-between p-3.5 rounded-xl bg-slate-50 dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-900 dark:text-slate-100 border border-slate-200/80 dark:border-slate-800 transition-colors group"
+                >
+                  <div className="flex items-center gap-3">
+                    <Linkedin size={18} className="text-blue-600 dark:text-blue-400 group-hover:scale-110 transition-transform" />
+                    <div>
+                      <p className="font-mono text-xs font-bold">LinkedIn Profile</p>
+                      <p className="font-mono text-[11px] text-slate-500">linkedin.com/in/samuel-okundalaiye</p>
+                    </div>
+                  </div>
+                  <ExternalLink size={14} className="text-slate-400 group-hover:text-slate-600 dark:group-hover:text-slate-200" />
+                </a>
+
                 {/* GitHub */}
                 <a
                   href="https://github.com/la-phoenix"

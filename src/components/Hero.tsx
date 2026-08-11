@@ -1,4 +1,4 @@
-import { ArrowRight, FileText, Github, Terminal, Copy, Check } from 'lucide-react';
+import { ArrowRight, FileText, Github, Terminal, Copy, Check, Linkedin } from 'lucide-react';
 import { useState } from 'react';
 
 export function Hero() {
@@ -88,6 +88,16 @@ export function Hero() {
               <span>Resume PDF</span>
             </a>
 
+            <a
+              href="https://www.linkedin.com/in/samuel-okundalaiye-11675a40a"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-secondary font-mono text-xs"
+            >
+              <Linkedin size={15} className="mr-1.5 text-blue-600 dark:text-blue-400" />
+              <span>LinkedIn</span>
+            </a>
+
             <button
               onClick={copyEmail}
               className="btn-secondary font-mono text-xs"
@@ -140,15 +150,26 @@ export function Hero() {
                 <Terminal size={12} className="text-indigo-500" />
                 <span>SeniorEngineer.cs</span>
               </div>
-              <a
-                href="https://github.com/samuelokundalaiye"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 transition-colors"
-                title="GitHub Profile"
-              >
-                <Github size={15} />
-              </a>
+              <div className="flex items-center gap-3">
+                <a
+                  href="https://github.com/la-phoenix"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 transition-colors"
+                  title="GitHub Profile"
+                >
+                  <Github size={15} />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/samuel-okundalaiye-11675a40a"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-slate-400 hover:text-blue-500 dark:hover:text-blue-400 transition-colors"
+                  title="LinkedIn Profile"
+                >
+                  <Linkedin size={15} />
+                </a>
+              </div>
             </div>
 
             {/* Code Content (C#) */}

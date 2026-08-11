@@ -1,4 +1,4 @@
-import { Mail, Github, FileText, ArrowUp, Terminal } from 'lucide-react';
+import { Mail, Github, FileText, ArrowUp, Terminal, Linkedin } from 'lucide-react';
 
 export function Footer() {
   const scrollToTop = () => {
@@ -76,6 +76,16 @@ export function Footer() {
               Developer Connections
             </h4>
             <div className="space-y-3">
+              <a
+                href="https://www.linkedin.com/in/samuel-okundalaiye-11675a40a"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 p-3 rounded-xl bg-slate-800/80 hover:bg-slate-800 text-slate-200 border border-slate-700/80 transition-colors group"
+              >
+                <Linkedin size={16} className="text-slate-400 group-hover:text-blue-400" />
+                <span className="font-mono text-xs">linkedin.com/in/samuel-okundalaiye</span>
+              </a>
+
               <a
                 href="https://github.com/la-phoenix"
                 target="_blank"
