@@ -108,7 +108,7 @@ export function Footer() {
                 href="/resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                download="Samuel_Okundalaiye_Resume.pdf"
+                download="Samuel_Okundalaiye_NET_Software_Engineer.pdf"
                 className="flex items-center gap-3 p-3 rounded-xl bg-indigo-950/60 hover:bg-indigo-900/60 text-indigo-200 border border-indigo-800/60 transition-colors group"
               >
                 <FileText size={16} className="text-indigo-400" />

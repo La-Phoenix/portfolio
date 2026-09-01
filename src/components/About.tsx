@@ -156,7 +156,7 @@ export function About() {
                   href="/resume.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
-                  download="Samuel_Okundalaiye_Resume.pdf"
+                  download="Samuel_Okundalaiye_NET_Software_Engineer.pdf"
                   className="flex items-center justify-between p-3.5 rounded-xl bg-indigo-50 dark:bg-indigo-950/40 hover:bg-indigo-100 dark:hover:bg-indigo-900/50 text-indigo-950 dark:text-indigo-100 border border-indigo-200 dark:border-indigo-800/60 transition-colors group"
                 >
                   <div className="flex items-center gap-3">

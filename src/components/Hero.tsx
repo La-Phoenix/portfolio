@@ -81,7 +81,7 @@ export function Hero() {
               href="/resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              download="Samuel_Okundalaiye_Resume.pdf"
+              download="Samuel_Okundalaiye_NET_Software_Engineer.pdf"
               className="btn-secondary"
             >
               <FileText size={16} className="mr-2 text-indigo-600 dark:text-indigo-400" />
